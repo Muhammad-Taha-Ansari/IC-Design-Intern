@@ -36,13 +36,13 @@ Just follow these combined steps and you're good to go.
 ---
 
 ### ✅ Step 1: Update Packages
-```bash
+```bash```
 sudo apt update
 
 ---
 
 ### 🛠️ Step 2: Install Verilator
-```bash
+```bash```
 sudo add-apt-repository universe
 sudo apt install verilator
 verilator --version    # Check installation
@@ -50,7 +50,7 @@ verilator --version    # Check installation
 ---
 
 ### 🎛️ Step 3: Install GTKWave
-```bash
+```bash```
 sudo apt install gtkwave
 gtkwave --version      # Check installation
 sudo apt install git build-essential libgtk-3-dev \ libgtksourceview-3.0-dev libglade2-dev libtcl8.6-dev\ libxt-dev zlib1g-dev       #(Optional dependencies for building GUI apps):
@@ -59,18 +59,18 @@ sudo apt install git build-essential libgtk-3-dev \ libgtksourceview-3.0-dev lib
 
 ###🧾 Step 4: Create Verilog and Testbench Files
 ➤ Create and edit the Verilog file:
-```bash
+```bash```
 touch half_adder.v
 nano half_adder.v
 ➤ Create and edit the C++ testbench:
-```bash
+```bash```
 touch tb_half_adder.cpp
 nano tb_half_adder.cpp
 
 ---
 
 ### ⚙️ Step 5: Compile & Run with Verilator
-```bash
+```bash```
 verilator --cc half_adder.v --exe tb_half_adder.cpp --trace
 make -C obj_dir -f Vhalf_adder.mk Vhalf_adder
 ./obj_dir/Vhalf_adder
@@ -78,7 +78,7 @@ make -C obj_dir -f Vhalf_adder.mk Vhalf_adder
 ---
 
 ### 📊 Step 6: View Waveform in GTKWave
-```bash
+```bash```
 gtkwave wave.vcd
 
 ---
