@@ -57,7 +57,7 @@ sudo apt install git build-essential libgtk-3-dev \ libgtksourceview-3.0-dev lib
 
 ---
 
-###🧾 Step 4: Create Verilog and Testbench Files
+### 🧾 Step 4: Create Verilog and Testbench Files
 ➤ Create and edit the Verilog file:
 ```bash```
 touch half_adder.v
